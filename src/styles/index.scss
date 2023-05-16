@@ -1,0 +1,31 @@
+@use './abstracts/variables' as var;
+@use './abstracts/normalize';
+
+* {
+  font-family: var.$primary-font;
+}
+
+:root {
+  --toastify-toast-width: 300px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding-left: 10px;
+
+  li {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+  }
+}
